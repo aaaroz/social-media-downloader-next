@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import { FadeUp } from "./ui/fade-up";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { BadgeAlert, Film, Image, Music, Video } from "lucide-react";
+import { BadgeAlert, Film, ImageIcon, Music, Video } from "lucide-react";
 import { Button } from "./extendui/button";
 import { availablePlatform } from "@/lib/constants";
 import { DownloadResponse } from "@/lib/types";
@@ -51,7 +51,7 @@ export const Result = ({
                             <>
                                 <div className="flex gap-4">
                                     <div className="p-8 size-24 flex rounded-lg items-center justify-center bg-input border border-border">
-                                        <Image />
+                                        <ImageIcon />
                                     </div>
                                     <div className="grid">
                                         <div>

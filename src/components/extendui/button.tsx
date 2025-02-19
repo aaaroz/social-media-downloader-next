@@ -1,14 +1,7 @@
 import { Slot } from "@radix-ui/react-slot";
-import { Tooltip } from "@radix-ui/react-tooltip";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Loader2 } from "lucide-react";
 import * as React from "react";
-
-import {
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
