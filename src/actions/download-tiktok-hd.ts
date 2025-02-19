@@ -14,6 +14,12 @@ export const downloadTikTokHD = async (urlParam: string) => {
                 "hx-trigger": "hd_download",
                 pragma: "no-cache",
                 priority: "u=1, i",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "sec-gpc": "1",
+                "Referer": "https://ssstik.io/",
+                "Referrer-Policy": "strict-origin-when-cross-origin"
             },
             body: JSON.stringify({ tt }),
         });
