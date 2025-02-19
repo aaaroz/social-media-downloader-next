@@ -51,7 +51,6 @@ export interface ButtonProps
     asChild?: boolean;
     loading?: boolean;
     loadingText?: string;
-    tooltipText?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -63,7 +62,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             asChild = false,
             loading,
             loadingText = "Processing...",
-            tooltipText,
             children,
             ...props
         },
